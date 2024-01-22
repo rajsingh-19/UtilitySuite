@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*      main container       */
+.divCon {
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(15, 4, 39);
+    display: flex;
+    flex-direction: row;
+    padding: 5vh;
+}
+/*      left div     */
+.divL {
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.choiceDiv {
+    width: 80%;
+    height: 30vh;
+    margin-left: 10%;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+    font-size: 60px;
+    font-style: italic;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: orange;
+}
+.label {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    height: 5vh;
+    width: 80%;
+    background-color: grey;
+}
+input::placeholder {
+    color: black;
+}
+/*      btn div      */
+.btnDiv {
+    width: 80%;
+    height: 5vh;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    width: 80%;
+    height: 4vh;
+    background-color: #1e293b;
+    border-radius: 10px;
+    border: 1px solid purple;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    text-decoration: wavy;
+    font-size: 1rem;
+}
+/*      right div        */
+.divR {
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 10%;
+}
+.bmiD {
+    width: 80%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pbmi {
+    width: 80%;
+    height: 10vh;
+    text-align: end;
+    font-size: 5vh;
+    padding-right: 5px;
+}
+.pBmi ::placeholder {
+    color: black;
+}
+.pointsD {
+    width: 80%;
+    height: 50vh;
+}
+.head3 {
+    height: 10vh;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 10px;
+    color: #10b981;
+}
+.descDiv {
+    width: 80%;
+    height: 40vh;
+    margin-left: 10%;
+}
+.des {
+    height: 10vh;
+    width: 80%;
+    text-align: center;
+    font-size: 2.5vh;
+    padding-top: 15px;
+    color: #be123c;
+}

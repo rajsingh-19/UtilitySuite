@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./Layout/calculator.css">
+</head>
+<body>
+    <script src="./Layout/index.js"></script>
+    <div class="container">
+        <div class="calculator-container">
+           <input type="text" id="outputDisplay" placeholder="0">
+           <div class="btn-container">
+                <div class="row">
+                    <button onclick="operatorFn('^')">^</button>
+                    <button onclick="percentFn('%')">%</button>
+                    <button onclick="delDisplay()">Del</button>
+                    <button onclick="clearDisplay()">AC</button>
+                </div>
+                <div class="row">
+                    <button onclick="displayInfo('7')" class="digits">7</button>
+                    <button onclick="displayInfo('8')" class="digits">8</button>
+                    <button onclick="displayInfo('9')" class="digits">9</button>
+                    <button onclick="operatorFn('/')">/</button>
+                </div>
+                <div class="row">
+                    <button onclick="displayInfo('4')" class="digits">4</button>
+                    <button onclick="displayInfo('5')" class="digits">5</button>
+                    <button onclick="displayInfo('6')" class="digits">6</button>
+                    <button onclick="operatorFn('*')">*</button>
+                </div>
+                <div class="row">
+                    <button onclick="displayInfo('1')" class="digits">1</button>
+                    <button onclick="displayInfo('2')" class="digits">2</button>
+                    <button onclick="displayInfo('3')" class="digits">3</button>
+                    <button onclick="operatorFn('-')">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="displayInfo('.')">.</button>
+                    <button onclick="displayInfo('0')" class="digits">0</button>
+                    <button onclick="calculate()" id="equal">=</button>
+                    <button onclick="operatorFn('+')">+</button>
+                </div>
+           </div>
+        </div>
+    </div>
+    <script src="./js/jsCal.js"></script>
+</body>
+</html>
