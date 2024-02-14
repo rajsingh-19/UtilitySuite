@@ -22,7 +22,7 @@ function operatorFn (op) {
 }
 function percentFn () {
     let displayLength = outputDisplay.value.length; 
-    if (displayLength = 1) {
+    if (displayLength == 1) {
         outputDisplay.value =  outputDisplay.value / 100;
     } else {
         outputDisplay.value = outputDisplay.value.slice(0, -1) / 100;
@@ -34,7 +34,7 @@ function calculate() {
         outputDisplay.value = 0;
     } else {
         try {
-            outputDisplay.value = eval(exp);
+            outputDisplay.value = eval(exp).toFixed(4);
         } catch (error) {
             outputDisplay.value = "Invalid Operation";
         }
