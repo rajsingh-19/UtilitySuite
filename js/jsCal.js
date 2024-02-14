@@ -13,7 +13,6 @@ function delDisplay () {
 function operatorFn (op) {
     let opArr = ['^', '%', '-', '+', '/', '*'];
     let lastChar = outputDisplay.value.charAt(outputDisplay.value.length-1);
-    let percentChar = outputDisplay.value.charAt(outputDisplay.value.length);
 
     if(opArr.includes(lastChar)) {
         outputDisplay.value = outputDisplay.value.slice(0, -1);
@@ -22,10 +21,8 @@ function operatorFn (op) {
 }
 function percentFn () {
     let displayLength = outputDisplay.value.length; 
-    if (displayLength == 1) {
+    if (displayLength >= 1) {
         outputDisplay.value =  outputDisplay.value / 100;
-    } else {
-        outputDisplay.value = outputDisplay.value.slice(0, -1) / 100;
     }
 }
 function calculate() {
