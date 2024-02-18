@@ -63,3 +63,88 @@ button {
     color: white;
     background-color: #94a3b8;
 }
+/*      Adding Responsiveness    */
+@media (min-width: 300px) and (max-width: 567px) {
+    .calculator-container {
+        width: 80%;
+        height: 90%;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    #outputDisplay {
+        width: 100%;
+        height: 15%;
+        font-size: 2.2rem;
+    }
+    .btn-container {
+        height: 85%;
+        padding: 15px;
+    }
+    .row {
+        height: 18%;
+        padding: 05px;
+        margin-bottom: 10px;
+    }
+    button {
+        font-size: 20px;
+        border-radius: 15px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+    }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+    .calculator-container {
+        width: 80%;
+        height: 90%;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    #outputDisplay {
+        width: 100%;
+        height: 20%;
+        font-size: 3rem;
+    }
+    .btn-container {
+        height: 80%;
+        padding: 15px;
+    }
+    .row {
+        height: 18%;
+        padding: 05px;
+        margin-bottom: 10px;
+    }
+    button {
+        font-size: 30px;
+        border-radius: 15px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .calculator-container {
+        width: 80%;
+        height: 90%;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    #outputDisplay {
+        width: 100%;
+        height: 20%;
+        font-size: 3rem;
+    }
+    .btn-container {
+        height: 80%;
+        padding: 15px;
+    }
+    .row {
+        height: 18%;
+        padding: 05px;
+        margin-bottom: 10px;
+    }
+    button {
+        font-size: 2.5rem;
+        border-radius: 18px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+    }
+}

@@ -6,7 +6,6 @@
 /*      main container       */
 .divCon {
     width: 100%;
-    height: 85vh;
     background-color: rgb(15, 4, 39);
     display: flex;
     flex-direction: row;
@@ -121,4 +120,132 @@ input::placeholder {
     font-size: 2.5vh;
     padding-top: 15px;
     color: #be123c;
+}
+/*      Adding Responsiveness    */
+@media (min-width: 300px) and (max-width: 567px) {
+    .divCon {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2vh;
+    }
+    .divL {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    .heading {
+        font-size: 35px;
+    }
+    .btnDiv {
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    .btn {
+        height: 5vh;
+        font-size: 1.1rem;
+    }
+    .divR {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    .bmiD {
+        width: 90%;
+        height: 10vh;
+    }
+    .pbmi {
+        font-size: 2rem;
+    }
+    .pointsD {
+        width: 80%;
+        height: 50vh;
+    }
+    .head3 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+    .des {
+        height: 08vh;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+    .heading {
+        font-size: 50px;
+    }
+    .label {
+        margin-top: 5px;
+    }
+    input {
+        height: 4vh;
+        width: 80%;
+        background-color: grey;
+    }
+    .btnDiv {
+        margin-left: 10%;
+        margin-bottom: 25px;
+    }
+    .btn {
+        height: 5vh;
+        font-size: 1.2rem;
+    }
+    .bmiD {
+        width: 90%;
+        height: 08vh;
+    }
+    .pbmi {
+        font-size: 2.2rem;
+    }
+    .pointsD {
+        width: 80%;
+    }
+    .head3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .des {
+        height: 08vh;
+        font-size: 1.3rem;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .heading {
+        font-size: 50px;
+    }
+    .btnDiv {
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    .btn {
+        height: 5vh;
+        font-size: 1.3rem;
+    }
+    .bmiD {
+        width: 90%;
+        height: 10vh;
+    }
+    .pbmi {
+        font-size: 2.5rem;
+    }
+    .pointsD {
+        width: 80%;
+        height: 50vh;
+    }
+    .head3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .des {
+        height: 08vh;
+        font-size: 1.3rem;
+        text-align: center;
+        padding-top: 25px;
+    }
+}
+@media (min-width:1024px) {
+    .des{
+        font-size: 1.7rem;
+    }
 }

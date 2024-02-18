@@ -38,3 +38,28 @@
 .a:hover {
     color: green;
 }
+/*      --Adding responsiveness--    */
+@media (min-width: 300px) and (max-width: 567px) {
+    .heading-container {
+        font-size: 1.5rem;
+    }
+    .nav-ul {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+    .heading-container {
+        font-size: 1.8rem;
+    }
+    .nav-ul {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .heading-container {
+        font-size: 2.5rem;
+    }
+    .nav-ul {
+        font-size: 1.1rem;
+    }
+}
